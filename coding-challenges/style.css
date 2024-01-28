@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+  width: 70%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+}
+
+/* PRODUCT */
+.product {
+  border: 4px solid black;
+}
+
+.product-title {
+  font-size: 10px;
+  text-transform: uppercase;
+  background-color: #f7f7f7;
+  margin-top: 0;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.product-title::before {
+  content: "SALE";
+  background-color: red;
+  color: white;
+  padding: 3px 5px;
+  position: absolute;
+  top: -10px;
+  left: -13px;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+  font-size: 15px;
+  margin-bottom: 1px;
+  width: 20%;
+}
+
+.shipping {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #777;
+  width: 80%;
+  padding-top: 5px;
+  padding-left: 60px;
+}
+
+.colors {
+  margin-top: 15px;
+  display: block;
+}
+
+.color-pickers {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+#color1 {
+  background-color: red;
+}
+
+#color2 {
+  background-color: orange;
+}
+
+#color3 {
+  background-color: green;
+}
+
+#color4 {
+  background-color: black;
+}
+
+#color5 {
+  background-color: brown;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+  font-size: 10px;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.details-list {
+  padding-left: 20px;
+  list-style: square;
+}
+
+/* BUTTON */
+.add-cart {
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+}
+
+.add-cart:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.product-img {
+  height: auto;
+}
+
+.product-metadata {
+  font-size: 14px;
+  /* flex: 1 0 50px; */
+}
+
+/* .product-details {
+  flex: 1 0 50px;
+} */
+
+.price-label {
+  display: flex;
+  justify-content: space-between;
+}
